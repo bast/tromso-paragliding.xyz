@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ section.content | safe }}
+
+  {% set locations = load_data(path="content/locations.yaml") %}
+  {% set areas = load_data(path="content/areas.yaml") %}
+
+  <div id='map'></div>
+
+  <script>
+    var map = L.map('map').setView([69.7, 18.8], 9);
+
+    L.tileLayer.kartverket('topo4', {attribution: "<a href='https://www.kartverket.no/'>Kartverket</a>"}).addTo(map);
+
+    var custom_icon = L.Icon.extend({
+        options: {
+            iconSize:   [50, 50],
+            iconAnchor: [25, 25],
+        }
+    });
+
+    var launch_icon = new custom_icon({iconUrl: '/img/arrow.png'});
+    {% for site in locations.launches %}
+      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: launch_icon, rotationAngle: {{ site.angle }}}).bindPopup("{{ site.name }}").addTo(map);
+    {% endfor %}
+
+    var windsock_icon = new custom_icon({iconUrl: '/img/wind-sock.png'});
+    {% for site in locations.landings %}
+      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: windsock_icon}).bindPopup("{{ site.name }}").addTo(map);
+    {% endfor %}
+
+    {% for polygon in areas.polygons %}
+      L.polygon({{ polygon.points }}).bindPopup("{{ polygon.name }}").addTo(map);
+    {% endfor %}
+  </script>
+{% endblock content %}

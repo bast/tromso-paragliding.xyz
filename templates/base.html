@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/img/logo-hashbang.ico">
+
+    <title>{{ config.title }}</title>
+
+    {% if config.extra.twitter_image %}
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="{{ config.extra.twitter_image | safe }}" />
+    {% endif %}
+
+    <meta name="description" content="{{ config.description }}" />
+    <meta name="twitter:description" content="{{ config.description }}" />
+
+    {% if page.title %}
+      <meta name="twitter:title" content="{{ page.title }}" />
+    {% else %}
+      <meta name="twitter:title" content="{{ config.title }}" />
+    {% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    <script src="/js/leaflet.rotatedMarker.js"></script>
+    <script src="/js/L.TileLayer.Kartverket.js"></script>
+
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="ui container bottom-buffer">
+      <div class="ui secondary pointing stackable menu">
+        <div class="right menu">
+          {% for link in config.extra.navigation %}
+            <a class="item" href="{{ link.path | safe }}" id="fonts">{{ link.name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="top-buffer">
+        {% block content %}
+        {% endblock content %}
+      </div>
+
+      <div class="top-buffer">
+        <hr>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" integrity="sha256-CgSoWC9w5wNmI1aN8dIMK+6DPelUEtvDr+Bc2m/0Nx8=" crossorigin="anonymous"></script>
+
+  </body>
+</html>
