@@ -27,7 +27,7 @@
 
     var windsock_icon = new custom_icon({iconUrl: '/img/wind-sock.png'});
     {% for site in locations.landings %}
-      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: windsock_icon}).bindPopup("{{ site.name }}").addTo(map);
+      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: windsock_icon}).bindPopup("<h3>{{ site.name }}</h3>{{ site.notes }}").addTo(map);
     {% endfor %}
 
     {% for polygon in areas.polygons %}

@@ -4,21 +4,21 @@ launches:
     angle: -90
     lat: 69.633145
     lon: 18.990738
-    notes: |
+    notes:
       Some notes about the launch.
       More notes.
   - name: North start
     angle: 0
     lat: 69.636169
     lon: 18.998
-    notes: |
+    notes:
       Some notes about the launch.
       More notes.
   - name: Oof
     angle: 90
     lat: 69.699712
     lon: 18.638649
-    notes: |
+    notes:
       Some notes about the launch.
       More notes.
       Even more notes.
@@ -26,7 +26,7 @@ launches:
     angle: -45
     lat: 69.760482
     lon: 18.853783
-    notes: |
+    notes:
       Some notes about the launch.
       More notes.
       Even more notes.
@@ -34,7 +34,7 @@ launches:
     angle: 60
     lat: 69.6201959
     lon: 19.000064
-    notes: |
+    notes:
       Some notes about the launch.
       More notes.
       Even more notes.
@@ -42,7 +42,7 @@ launches:
     angle: 220
     lat: 69.6199724
     lon: 18.9981473
-    notes: |
+    notes:
       Some notes about the launch.
       More notes.
       Even more notes.
@@ -50,7 +50,7 @@ launches:
     angle: 120
     lat: 69.6191003
     lon: 18.9991422
-    notes: |
+    notes:
       Some notes about the launch.
       More notes.
       Even more notes.
@@ -59,31 +59,53 @@ landings:
   - name: TIRB
     lat: 69.641227
     lon: 18.978109
-    notes: |
-      Some notes about the landing.
+    notes:
+      This is the main landing on this site.  It is close to the cable car.  It
+      is small but there is some space if you overshoot.  Easier to land from
+      south than from north.  On strong west wind the place can be very
+      turbulent and in this case either try to top-land or rather go to
+      Mandelasletta. Watch out for the fence next to the wind-sock.  Also use
+      the flags on top of the supermarket as wind indication.
+      In afternoons a strong sea-breeze can set in.  If you see white-caps on
+      the water, don't fly since you risk to be blown back.
   - name: Mandelasletta
     lat: 69.650857
     lon: 18.991451
-    notes: |
-      Some notes about the landing.
+    notes:
+      A lot of space. Basically 3 football fields large. We use this landing in
+      courses but nothing speaks against using it also after the course.
+      In afternoons a strong sea-breeze can set in.  If you see white-caps on
+      the water, don't fly since you risk to be blown back.
   - name: Ersfjord landing
     lat: 69.697589
     lon: 18.631767
-    notes: |
-      Some notes about the landing.
+    notes:
+      Behind the house, typically landing from west towards east.  The landing
+      is big and easy but it is really the only landing (other than
+      top-landing).  Beach is not a good landing as there are cables
+      everywhere.  Biggest risk is the cable running down from the antenna. If
+      you are below launch, set up for landing and don't scratch otherwise you
+      risk getting too low to clear the cable.  If wind turns south and picks
+      up and you realize you won't make it to the landing, a backup landing is
+      north of the launch, at the shore.
   - name: Little parking
     lat: 69.764473
     lon: 18.844769
-    notes: |
-      Some notes about the landing.
-      Watch out it's sloped.
+    notes:
+      Typically approached from east to west.  Watch out it's sloped and you
+      will very likely overshoot it.
   - name: Top parking
     lat: 69.759861
     lon: 18.854284
-    notes: |
-      Some notes about the landing.
+    notes:
+      Popular landing when conditions allow to lift/hang.
+      Sometimes cars park left and right.
+      Try a rectangular approach in front of the cables.
   - name: Huge landing
     lat: 69.768239
     lon: 18.842442
-    notes: |
-      Some notes about the landing.
+    notes:
+      You can land a 474 here. Almost. We use this during the course.  It can
+      be wet and in summer it can be full of flies and mosquitoes.  It can make
+      sense to walk up to the parking and either pack there or hope for
+      retrieve to drive you back up to launch.
