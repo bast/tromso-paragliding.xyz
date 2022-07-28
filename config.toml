@@ -23,7 +23,7 @@ highlight_theme = "cheerfully-light"
 [extra]
 
 navigation = [
-  { name = "Home", path = "/" },
+  { name = "Sites", path = "/" },
   { name = "Wind and weather", path = "/wind/" },
   { name = "Airspace", path = "/airspace/" },
   { name = "Resources", path = "/resources/" },
