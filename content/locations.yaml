@@ -1,0 +1,91 @@
+---
+launches:
+  - name: South start
+    angle: -90
+    lat: 69.633145
+    lon: 18.990738
+    notes: |
+      Some notes about the launch.
+      More notes.
+      Even more notes.
+  - name: North start
+    angle: 0
+    lat: 69.636169
+    lon: 18.998
+    notes: |
+      Some notes about the launch.
+      More notes.
+      Even more notes.
+  - name: Oof
+    angle: 90
+    lat: 69.699712
+    lon: 18.638649
+    notes: |
+      Some notes about the launch.
+      More notes.
+      Even more notes.
+  - name: FVD launch
+    angle: -45
+    lat: 69.760482
+    lon: 18.853783
+    notes: |
+      Some notes about the launch.
+      More notes.
+      Even more notes.
+  - name: Floya north
+    angle: 60
+    lat: 69.6201959
+    lon: 19.000064
+    notes: |
+      Some notes about the launch.
+      More notes.
+      Even more notes.
+  - name: Floya south
+    angle: 220
+    lat: 69.6199724
+    lon: 18.9981473
+    notes: |
+      Some notes about the launch.
+      More notes.
+      Even more notes.
+  - name: Floya east
+    angle: 120
+    lat: 69.6191003
+    lon: 18.9991422
+    notes: |
+      Some notes about the launch.
+      More notes.
+      Even more notes.
+
+landings:
+  - name: TIRB
+    lat: 69.641227
+    lon: 18.978109
+    notes: |
+      Some notes about the landing.
+  - name: Mandelasletta
+    lat: 69.650857
+    lon: 18.991451
+    notes: |
+      Some notes about the landing.
+  - name: Ersfjord landing
+    lat: 69.697589
+    lon: 18.631767
+    notes: |
+      Some notes about the landing.
+  - name: Little parking
+    lat: 69.764473
+    lon: 18.844769
+    notes: |
+      Some notes about the landing.
+      Watch out it's sloped.
+  - name: Top parking
+    lat: 69.759861
+    lon: 18.854284
+    notes: |
+      Some notes about the landing.
+  - name: Huge landing
+    lat: 69.768239
+    lon: 18.842442
+    notes: |
+      Some notes about the landing.
