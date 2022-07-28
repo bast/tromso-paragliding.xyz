@@ -24,8 +24,8 @@ highlight_theme = "cheerfully-light"
 
 navigation = [
   { name = "Sites", path = "/" },
-  { name = "Wind and weather", path = "/wind/" },
   { name = "Airspace", path = "/airspace/" },
+  { name = "Wind and weather", path = "/wind/" },
   { name = "Resources", path = "/resources/" },
   { name = "Contact", path = "/contact/" },
 ]
