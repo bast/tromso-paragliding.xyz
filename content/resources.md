@@ -11,6 +11,8 @@ watching/following/listening/reading these.
 ## Videos
 
 - [Cross Country Magazine Masterclass: SIV and active piloting with Malin Lobb](https://youtu.be/fMihwZEe-Sg)
+- [SIV with Jocky Sanderson](https://youtu.be/T2yqaePk08g)
+- [Ozone Test Pilot Russell Ogden Discusses all things Paragliding](https://www.youtube.com/watch?v=_YVbdaLc1jk)
 
 
 ## Podcast
