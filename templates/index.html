@@ -22,7 +22,7 @@
 
     var launch_icon = new custom_icon({iconUrl: '/img/arrow.png'});
     {% for site in locations.launches %}
-      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: launch_icon, rotationAngle: {{ site.angle }}}).bindPopup("{{ site.name }}").addTo(map);
+      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: launch_icon, rotationAngle: {{ site.angle }}}).bindPopup("<h3>{{ site.name }}</h3>{{ site.notes }}").addTo(map);
     {% endfor %}
 
     var windsock_icon = new custom_icon({iconUrl: '/img/wind-sock.png'});

@@ -5,55 +5,48 @@ launches:
     lat: 69.633145
     lon: 18.990738
     notes:
-      Some notes about the launch.
-      More notes.
+      Lots of space here. Good on SW or W wind.
   - name: North start
     angle: 0
     lat: 69.636169
     lon: 18.998
     notes:
-      Some notes about the launch.
-      More notes.
-  - name: Oof
+      Right next to the antenna. Works for NW, N, even slightly NE wind.
+  - name: Ersfjord
     angle: 90
-    lat: 69.699712
-    lon: 18.638649
+    lat: 69.7006255
+    lon: 18.6356585
     notes:
-      Some notes about the launch.
-      More notes.
-      Even more notes.
-  - name: FVD launch
+      Great site on E wind, especially in winter and early spring.  If you drop
+      below launch, head to landing and don't try to scratch up.
+  - name: Finnvikdalen launch
     angle: -45
     lat: 69.760482
     lon: 18.853783
     notes:
-      Some notes about the launch.
-      More notes.
-      Even more notes.
+      Ideally on W to NW wind. Above 4-5 m/s the mountain to the right provides
+      a beautiful soaring space.
   - name: Floya north
-    angle: 60
+    angle: 90
     lat: 69.6201959
     lon: 19.000064
     notes:
-      Some notes about the launch.
-      More notes.
-      Even more notes.
+      N or NE wind. Watch out for the high-power electricity line running below
+      the launch.  After launch head for the antenna.
   - name: Floya south
     angle: 220
     lat: 69.6199724
     lon: 18.9981473
     notes:
-      Some notes about the launch.
-      More notes.
-      Even more notes.
+      After launch swing right and head for the south start.
   - name: Floya east
     angle: 120
-    lat: 69.6191003
-    lon: 18.9991422
+    lat: 69.6181481
+    lon: 18.9978354
     notes:
-      Some notes about the launch.
-      More notes.
-      Even more notes.
+      There is a little rock/ledge where it is possible to launch on E wind.
+      After launch swing left and follow the slope to the left.  Watch out for
+      the high-power electricity line and head for the antenna.
 
 landings:
   - name: TIRB
