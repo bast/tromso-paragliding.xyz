@@ -22,10 +22,11 @@ On this page look at the right column under "METAR/SPECI". The interesting value
 
 For example let us look at this entry:
 ```
-METAR ENTC 281050Z 06004KT 030V110 9999 FEW016 BKN022 OVC044 10/07 Q1017 NOSIG RMK WIND 2600FT 32014KT
+METAR ENTC 281050Z 06004KT 030V110 9999 FEW016 BKN022
+OVC044 10/07 Q1017 NOSIG RMK WIND 2600FT 32014KT
 ```
 
-Here the interesting part is `32014KT` meaning that it's 14 knots with wind
+Here the interesting part is the last part: `32014KT` This means that it's 14 knots with wind
 from 320 degrees. The wind station is located at `2600FT` [at the top of
 Kjølen](https://norgeskart.no/#!?project=norgeskart&layers=1002&zoom=10&lat=7735943.68&lon=648327.31&markerLat=7740715.707866439&markerLon=646317.8149576897&p=searchOptionsPanel&sok=Stor-Kj%C3%B8len).
 This reading gives a good idea of what wind to expect higher up. It often also
