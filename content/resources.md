@@ -3,13 +3,14 @@
 
 # Resources
 
-Here collecting resources that can help us to fly better and safer and to
-understand the skies better.
+Here I am collecting amazing resources that can help us to fly better and safer
+and to understand the skies better. I have really enjoyed
+watching/following/listening/reading these.
 
 
 ## Videos
 
-- <https://xcmag.com/masterclasses/>
+- [Cross Country Magazine Masterclass: SIV and active piloting with Malin Lobb](https://youtu.be/fMihwZEe-Sg)
 
 
 ## Podcast
