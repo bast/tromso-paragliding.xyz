@@ -7,7 +7,6 @@ launches:
     notes: |
       Some notes about the launch.
       More notes.
-      Even more notes.
   - name: North start
     angle: 0
     lat: 69.636169
@@ -15,7 +14,6 @@ launches:
     notes: |
       Some notes about the launch.
       More notes.
-      Even more notes.
   - name: Oof
     angle: 90
     lat: 69.699712
