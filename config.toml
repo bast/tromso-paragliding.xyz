@@ -1,0 +1,33 @@
+# The URL the site will be built for
+base_url = "https://tromso-paragliding.xyz"
+
+title = "Tromso paragliding"
+
+description = '''
+Resources for local and visiting pilots.
+'''
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+
+[markdown]
+
+highlight_code = true
+highlight_theme = "cheerfully-light"
+
+
+[extra]
+
+navigation = [
+  { name = "Home", path = "/" },
+  { name = "Wind and weather", path = "/wind/" },
+  { name = "Airspace", path = "/airspace/" },
+  { name = "Resources", path = "/resources/" },
+  { name = "Contact", path = "/contact/" },
+]
+
+# twitter_image = "https://example.png"
