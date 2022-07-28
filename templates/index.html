@@ -31,7 +31,7 @@
     {% endfor %}
 
     {% for polygon in areas.polygons %}
-      L.polygon({{ polygon.points }}).bindPopup("{{ polygon.name }}").addTo(map);
+      L.polygon({{ polygon.points }}).bindPopup("<h3>{{ polygon.name }}</h3>{{ polygon.notes }}").addTo(map);
     {% endfor %}
   </script>
 {% endblock content %}

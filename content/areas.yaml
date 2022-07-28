@@ -7,3 +7,8 @@ polygons:
       [69.4375, 19.05],
       [69.9, 19.5]
     ]
+    notes:
+      Flying is restricted to certain boxes and
+      you have to call the tower before flying.
+      Before you call, coordinate with others.
+      See "Airspace".
