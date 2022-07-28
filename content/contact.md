@@ -5,11 +5,11 @@
 
 This page is maintained by Radovan Bast (<radovan.bast@uit.no>).
 
-Please also check the [THPK club website](thpk.no) for more info.
+Please also check the [THPK club website](http://thpk.no) for more info.
 
 If you are new to this area, it is a good idea and much safer and more fun to
 team up with others and not fly alone. For this you can join one or more of the
-[THPK club](thpk.no) Telegram groups:
+[THPK club](http://thpk.no) Telegram groups:
 
 - [THPK flyboks](https://t.me/joinchat/RF54vlM7r-WYjzLDKXSRAQ): here we coordinate airspace and announce opening and closing of "boxes"
 - [THPK tur](https://t.me/joinchat/RF54vksjjQS4gElj209nDw): planning tours
