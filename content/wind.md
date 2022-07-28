@@ -6,9 +6,10 @@
 
 ## Holfuy stations
 
-These are positioned very close to the main launches and are our main source of
-data: <https://holfuy.com/no/map/wind&la=69.70303&lo=18.72439&z=9.0>. Many
-local pilots have the phone app installed where there is a useful tabular
+These anemometer stations are positioned very close to the main launches and
+are our main source of data:
+<https://holfuy.com/no/map/wind&la=69.70303&lo=18.72439&z=9.0>.
+Many local pilots have the phone app installed where there is a useful tabular
 overview with 15 min or 1 hour granularity and it is recommended to look at the
 development and not only at the value right now.
 
