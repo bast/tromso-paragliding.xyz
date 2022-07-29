@@ -12,12 +12,14 @@ launches:
     lon: 18.998
     notes:
       Right next to the antenna. Works for NW, N, even slightly NE wind.
+      This is one of our main launches. You can either take the cable car
+      up or walk up sherpatrappa.
   - name: Ersfjord
     angle: 90
     lat: 69.7006255
     lon: 18.6356585
     notes:
-      Great site on E wind, especially in winter and early spring.  If you drop
+      Great site on E wind, especially in winter and early spring. Requires 4-6 m/s to hang. If you drop
       below launch, head to landing and don't try to scratch up.
   - name: Finnvikdalen launch
     angle: -45
@@ -25,7 +27,8 @@ launches:
     lon: 18.853783
     notes:
       Ideally on W to NW wind. Above 4-5 m/s the mountain to the right provides
-      a beautiful soaring space.
+      a beautiful soaring space. The valley provides lot of space to explore and
+      land.
   - name: Floya north
     angle: 90
     lat: 69.6201959
@@ -61,7 +64,7 @@ landings:
       the flags on top of the supermarket as wind indication.
       In afternoons a strong sea-breeze can set in.  If you see white-caps on
       the water, don't fly since you risk to be blown back.
-      Also watch out for the big electricty trafo station a bit to the south.
+      Also watch out for the big electricity trafo station a bit to the south.
   - name: Mandelasletta
     lat: 69.650857
     lon: 18.991451
