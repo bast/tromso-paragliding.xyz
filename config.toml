@@ -30,4 +30,4 @@ navigation = [
   { name = "Contact", path = "/contact/" },
 ]
 
-# twitter_image = "https://example.png"
+twitter_image = "https://raw.githubusercontent.com/bast/tromso-paragliding.xyz/main/static/img/preview.png"
