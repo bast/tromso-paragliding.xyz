@@ -18,7 +18,7 @@ or "Improve this page")?
 - [Ozone Test Pilot Russell Ogden Discusses all things Paragliding](https://www.youtube.com/watch?v=_YVbdaLc1jk)
 
 
-## Podcast
+## Podcasts
 
 - <https://www.cloudbasemayhem.com/>
 
@@ -30,3 +30,8 @@ or "Improve this page")?
 - <https://www.xcmag.com/masteringparagliding/>
 - <https://xcmag.com/shop/product/thermal-flying-new-edition/>
 - <https://xcmag.com/shop/product/fifty-ways-to-fly-better-bruce-goldsmith/>
+
+
+## Maps
+
+- [Great map for hiking](https://norgeskart.no/)
