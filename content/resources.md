@@ -7,6 +7,9 @@ Here I am collecting amazing resources that can help us to fly better and safer
 and to understand the skies better. I have really enjoyed
 watching/following/listening/reading these.
 
+If you know of other good resources, can you please let me know (see "Contact"
+or "Improve this page")?
+
 
 ## Videos
 
