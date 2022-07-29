@@ -1,0 +1,45 @@
+{% set locations = load_data(path="content/locations.yaml") %}
+{% set areas = load_data(path="content/areas.yaml") %}
+
+<div id='map'></div>
+
+<script>
+  var map = L.map('map').setView([69.7, 18.9], 9);
+
+  L.tileLayer.kartverket('topo4', {attribution: "<a href='https://www.kartverket.no/'>Kartverket</a>"}).addTo(map);
+
+  {% if show_locations %}
+    var custom_icon = L.Icon.extend({
+        options: {
+            iconSize:   [50, 50],
+            iconAnchor: [25, 25],
+        }
+    });
+
+    var launch_icon = new custom_icon({iconUrl: '/img/arrow.png'});
+    {% for site in locations.launches %}
+      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: launch_icon, rotationAngle: {{ site.angle }}}).bindPopup("<h3>{{ site.name }}</h3>{{ site.notes }}").addTo(map);
+    {% endfor %}
+
+    var windsock_icon = new custom_icon({iconUrl: '/img/wind-sock.png'});
+    {% for site in locations.landings %}
+      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: windsock_icon}).bindPopup("<h3>{{ site.name }}</h3>{{ site.notes }}").addTo(map);
+    {% endfor %}
+  {% endif %}
+
+  {% for polygon in areas.polygons %}
+    {% if polygon.name is containing("box") %}
+       var color = '#f37228';
+       {% if show_locations %}
+         var opacity = 0.2;
+       {% else %}
+         var opacity = 0.4;
+       {% endif %}
+    {% else %}
+       var color = '#0000ff';
+       var opacity = 0.05;
+    {% endif %}
+
+    L.polygon({{ polygon.points }}).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h3>{{ polygon.name }}</h3>{{ polygon.notes }}").addTo(map);
+  {% endfor %}
+</script>

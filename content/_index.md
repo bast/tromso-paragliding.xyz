@@ -15,5 +15,5 @@ The information here comes **without any guarantees. Please verify the sources**
 I have gathered information about airspace from <http://thpk.no> and
 <http://luftrom.info/>. All other information is from own experience.
 
-**You can click on the symbols on the map below** to get information about launches and
-landing sites.
+**You can click on the symbols on the map below** to get information about launches,
+landing sites, and airspace boxes.
