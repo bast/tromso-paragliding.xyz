@@ -21,6 +21,8 @@ launches:
     notes:
       Great site on E wind, especially in winter and early spring. Requires 4-6 m/s to hang. If you drop
       below launch, head to landing and don't try to scratch up.
+      On S wind this is not a good place. If the wind is strong enough to stay
+      up, you are then probably in a rotor.
   - name: Finnvikdalen launch
     angle: -45
     lat: 69.760482
