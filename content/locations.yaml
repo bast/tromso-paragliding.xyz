@@ -52,6 +52,20 @@ launches:
       There is a little rock/ledge where it is possible to launch on E wind.
       After launch swing left and follow the slope to the left.  Watch out for
       the high-power electricity line and head for the antenna.
+  - name: Ramfjord
+    angle: 120
+    lat: 69.5785689
+    lon: 19.1222526
+    notes:
+      A nice spot to launch. Sometimes conditions are great but thermals in
+      front pull in backwind and make it difficult/impossible to launch. In
+      winter and early spring bring snowshoes.
+  - name: Fagerfjellet
+    angle: -100
+    lat: 69.5610323
+    lon: 19.2370489
+    notes:
+      Many cross-country adventures start here. Very nice launch on SW wind.
 
 landings:
   - name: TIRB
