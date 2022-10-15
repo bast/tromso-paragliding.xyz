@@ -3,7 +3,7 @@
 
 # Tromsø paragliding
 
-Goal of this page is to make paragliding safer and more fun for pilots visiting
+Let's make paragliding safer and more fun for pilots visiting
 Tromsø and new pilots who might not have local knowledge (yet) and want to get
 access to information and resources that we have and use locally.
 
