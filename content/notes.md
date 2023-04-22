@@ -37,7 +37,7 @@ for others, too.
 - Back-fly position: hand through the brake-loop pinching about brake-loop -
   position is that I could put thumbs through carabiners
 - Accelerated full frontal can stall into back-fly/deep stall, if the hands are not completely up after collapse
-- Asymmetric 360 collapse leaning into the collapse rotates into a SAT-like rotation
+- Asymmetric 360 collapse leaning into the collapse goes rapidly into a SAT-like rotation
 
 
 ## Safe exercises to try at home over dirt
