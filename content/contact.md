@@ -5,11 +5,11 @@
 
 This page is maintained by Radovan Bast (<radovan.bast@uit.no>).
 
-Please also check the [THPK club website](http://thpk.no) for more info.
+Please also check the [THPK club website](https://thpk.no) for more info.
 
 If you are new to this area, it is a good idea and much safer and more fun to
 team up with others and not fly alone. For this you can join one or more of the
-[THPK club](http://thpk.no) [Signal](https://signal.org/) groups:
+[THPK club](https://thpk.no) [Signal](https://signal.org/) groups:
 
 - [THPK flyboks](https://signal.group/#CjQKIEFDL9GndybrKwgfPps-LkFghgnxhFzaIF9Zd-1Jnz_FEhAR16FgrJSESTZabTtpZFmZ):
   here we coordinate airspace and announce opening and closing of "boxes"

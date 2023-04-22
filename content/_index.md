@@ -8,7 +8,7 @@ Tromsø and new pilots who might not have local knowledge (yet) and want to get
 access to information and resources that we have and use locally.
 
 This page is not a replacement for the [Tromsø hang- og paragliderklubb (THPK)
-club website](http://thpk.no).  I created this page with the goal of providing
+club website](https://thpk.no).  I created this page with the goal of providing
 something I wish I had when traveling to other places and wanting to fly.
 
 The information here comes **without any guarantees. Please verify the sources**.
