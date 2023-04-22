@@ -1,7 +1,7 @@
 +++
 +++
 
-# My own notes from 2 SIV courses
+# My own notes from two SIV courses
 
 I wrote these down for me so that I don't lose them but maybe they are useful
 for others, too.
