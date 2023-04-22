@@ -64,9 +64,9 @@ for others, too.
 
 ## Stall
 
-- Binary stall: down, up
-- 2-stage stall: stall, quickly open wingtips (raise hands to shoulder height), quickly re-stall
-- Stall stages: full stall -> back-fly -> parachutal/heli-phase
+- Binary stall: down -> wait -> up
+- 2-stage stall: stall, quickly open wingtips (raise hands to ca. shoulder height), quickly re-stall
+- Stall stages: full stall -> back-fly -> parachutal/heli-phase -> out
 - "If the body is alright, the glider is alright": Body position and hand symmetry is extremely important
 - If the tips are out, release
 - If it is already in front, release
