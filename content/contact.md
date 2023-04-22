@@ -9,13 +9,14 @@ Please also check the [THPK club website](http://thpk.no) for more info.
 
 If you are new to this area, it is a good idea and much safer and more fun to
 team up with others and not fly alone. For this you can join one or more of the
-[THPK club](http://thpk.no) Telegram groups:
+[THPK club](http://thpk.no) [Signal](https://signal.org/) groups:
 
-- [THPK flyboks](https://t.me/joinchat/RF54vlM7r-WYjzLDKXSRAQ): here we coordinate airspace and announce opening and closing of "boxes"
-- [THPK tur](https://t.me/joinchat/RF54vksjjQS4gElj209nDw): planning tours
-- [THPK sosial](https://t.me/joinchat/RF54vk0dtg7zDEl0XeQN5w): social stuff
-- [THPK skitprat](https://t.me/joinchat/RF54vkZFuDahxOvTG0-qAA): random talk
+- [THPK flyboks](https://signal.group/#CjQKIEFDL9GndybrKwgfPps-LkFghgnxhFzaIF9Zd-1Jnz_FEhAR16FgrJSESTZabTtpZFmZ):
+  here we coordinate airspace and announce opening and closing of "boxes"
+- [THPK tur](https://signal.group/#CjQKIJ_gz3DQjvCh3qTG74awOoU1rdEDxuTCcTs11o_X38IYEhDiHoVqoUYUsQQ5GatUyfv_): planning tours
+- [THPK sosial](https://signal.group/#CjQKIA-Xd_5k3rVvVQmBeMiXdunEhXjcYb8fAYeTSTS-opVMEhCBNyymyf7D5mKwfqqiXLZ6): social stuff
+- [THPK skitprat](https://signal.group/#CjQKIEVLEg-Ir5f0l8G-TMN1WZuFOylB-UYZhjXd5HdmAWfSEhBQ4ZkmKPoJc9ODosCCQt--): random talk
 
 Since you have to [open the airspace](/airspace/) anyway, you need to do one of these two:
-- join the [THPK flyboks Telegram group](https://t.me/joinchat/RF54vlM7r-WYjzLDKXSRAQ) and coordinate with others the airspace
-- contact us on [THPK tur](https://t.me/joinchat/RF54vksjjQS4gElj209nDw), find somebody who will go flying with you and can do this for you
+- join the "THPK flyboks" Signal group (link above) and coordinate the airspace with others
+- contact us on the "THPK tur" Signal group (link above), find somebody who will go flying with you and can do this for you
