@@ -94,7 +94,7 @@ for others, too.
 - Weight-shift downhill
 - Turn when diving
 - Better earlier than later (brake in the dive, not later)
-- Optimal brake input is 5 o'clock
+- Optimal brake input is 5 o'clock (just before 6 o'clock which is under the glider)
 - Add outside brake
 - On the way up squeeze inside break a bit longer to yaw the glider around to face the ground
 - Hands up when starting to dive
