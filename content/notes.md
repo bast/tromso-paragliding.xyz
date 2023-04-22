@@ -15,7 +15,7 @@ for others, too.
 - Start with the bigger tuck
 
 
-## 306 constant cadence turn
+## 360 constant cadence turn
 
 - Outside brake arranges the angle
 - In a tight 360 you can exit whenever you want
