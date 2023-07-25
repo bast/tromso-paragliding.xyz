@@ -36,3 +36,8 @@ or "Improve this page")?
 ## Maps
 
 - [Great map for hiking](https://norgeskart.no/)
+
+
+## Learning videos
+
+- [Fly With Greg](https://flywithgreg.com/)
