@@ -38,6 +38,11 @@ I always look at this value before flying. Also here it is useful to look at
 the history of values and not only at the last reading.
 
 
+## Dewpoint and other data
+
+- <https://metar-taf.com/ENTC>
+
+
 ## Vind Nå ("wind now")
 
 Data from many stations and some live webcams across Norway from various sports
