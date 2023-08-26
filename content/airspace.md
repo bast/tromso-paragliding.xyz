@@ -8,7 +8,7 @@ template = "airspace.html"
 ## How to open a box
 
 - Before you fly within Tromso CTR, **make sure your box is open**.
-  The control tower can be reached via 67 03 47 66.
+- To get the telephone number to the tower, please first join the [Signal group "THPK flyboks"](@/contact.md) and ask there.
 - **Before calling the tower and opening a box, make sure nobody else has opened it already**
   otherwise it makes the club look uncoordinated. Please check the [Signal group "THPK flyboks"](@/contact.md).
 - **Once you open a box, post it on the Signal** group ["THPK flyboks"](@/contact.md) so that others know.
