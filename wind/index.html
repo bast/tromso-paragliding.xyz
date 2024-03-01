@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Tromso paragliding</title>
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/bast/tromso-paragliding.xyz/main/static/img/preview.png" />
+    
+
+    <meta name="description" content="Resources for local and visiting pilots.
+" />
+    <meta name="twitter:description" content="Resources for local and visiting pilots.
+" />
+
+    
+      <meta name="twitter:title" content="Tromso paragliding" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    <script src="/js/leaflet.rotatedMarker.js"></script>
+    <script src="/js/L.TileLayer.Kartverket.js"></script>
+
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="ui container bottom-buffer">
+      <div class="ui secondary pointing stackable menu">
+        <div class="right menu">
+          
+            <a class="item" href="/" id="fonts">Sites</a>
+          
+            <a class="item" href="/airspace/" id="fonts">Airspace</a>
+          
+            <a class="item" href="/wind/" id="fonts">Wind and weather</a>
+          
+            <a class="item" href="/resources/" id="fonts">Resources</a>
+          
+            <a class="item" href="/contact/" id="fonts">Contact</a>
+          
+            <a class="item" href="/notes/" id="fonts">Own notes</a>
+          
+        </div>
+      </div>
+
+      <div class="top-buffer">
+        
+  <h1 id="wind-and-weather">Wind and weather</h1>
+<h2 id="holfuy-stations">Holfuy stations</h2>
+<p>These anemometer stations are positioned very close to the main launches and
+are our main source of data:
+<a href="https://holfuy.com/no/map/wind&amp;la=69.70303&amp;lo=18.72439&amp;z=9.0">https://holfuy.com/no/map/wind&amp;la=69.70303&amp;lo=18.72439&amp;z=9.0</a>.
+Many local pilots have the phone app installed where there is a useful tabular
+overview with 15 min or 1 hour granularity and it is recommended to look at the
+development and not only at the value right now.</p>
+<h2 id="metar-data">METAR data</h2>
+<ul>
+<li><a href="https://metar-taf.com/history/ENTC">https://metar-taf.com/history/ENTC</a></li>
+</ul>
+<p>On this page look at the right column under &quot;METAR/SPECI&quot;. The interesting value is the last entry in each row.</p>
+<p>For example let us look at this entry:</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>METAR ENTC 281050Z 06004KT 030V110 9999 FEW016 BKN022
+</span><span>OVC044 10/07 Q1017 NOSIG RMK WIND 2600FT 32014KT
+</span></code></pre>
+<p>Here the interesting part is the last part: <code>32014KT</code> This means that it's 14 knots with wind
+from 320 degrees. The wind station is located at <code>2600FT</code> <a href="https://norgeskart.no/#!?project=norgeskart&amp;layers=1002&amp;zoom=10&amp;lat=7735943.68&amp;lon=648327.31&amp;markerLat=7740715.707866439&amp;markerLon=646317.8149576897&amp;p=searchOptionsPanel&amp;sok=Stor-Kj%C3%B8len">at the top of
+Kjølen</a>.
+This reading gives a good idea of what wind to expect higher up. It often also
+gives a good idea on how the wind is on <a href="https://norgeskart.no/#!?project=norgeskart&amp;layers=1002&amp;zoom=12&amp;lat=7729925.28&amp;lon=654681.09&amp;markerLat=7728628.13872784&amp;markerLon=655309.1682911265&amp;p=searchOptionsPanel&amp;sok=Fl%C3%B8ya">top of
+Fløya</a>
+which is a popular launch spot on more SE wind.</p>
+<p>I always look at this value before flying. Also here it is useful to look at
+the history of values and not only at the last reading.</p>
+<h2 id="dewpoint-and-other-data">Dewpoint and other data</h2>
+<ul>
+<li><a href="https://metar-taf.com/ENTC">https://metar-taf.com/ENTC</a></li>
+</ul>
+<h2 id="vind-na-wind-now">Vind Nå (&quot;wind now&quot;)</h2>
+<p>Data from many stations and some live webcams across Norway from various sports
+that depend on wind speed and direction: <a href="https://xn--vindn-qra.no/">https://xn--vindn-qra.no/</a></p>
+<h2 id="forecast">Forecast</h2>
+<ul>
+<li><a href="https://www.yr.no/nb/detaljer/tabell/1-305409/Norge/Troms%20og%20Finnmark/Troms%C3%B8/Troms%C3%B8">yr.no</a></li>
+<li><a href="https://www.windy.com/?69.629,18.774,10">windy.com</a></li>
+</ul>
+<h2 id="webcams">Webcams</h2>
+<ul>
+<li><a href="http://um0.no/cam.html">Langnes (next to airport) towards Kvaløya</a>: cam and wind information</li>
+</ul>
+
+
+      </div>
+
+      <div class="top-buffer">
+        <hr>
+        <a href="https://github.com/bast/tromso-paragliding.xyz/tree/main/content" target="_blank">Improve this page</a>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" integrity="sha256-CgSoWC9w5wNmI1aN8dIMK+6DPelUEtvDr+Bc2m/0Nx8=" crossorigin="anonymous"></script>
+
+  </body>
+</html>
