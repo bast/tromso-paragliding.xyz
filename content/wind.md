@@ -53,6 +53,7 @@ that depend on wind speed and direction: <https://xn--vindn-qra.no/>
 
 - [yr.no](https://www.yr.no/nb/detaljer/tabell/1-305409/Norge/Troms%20og%20Finnmark/Troms%C3%B8/Troms%C3%B8)
 - [windy.com](https://www.windy.com/?69.629,18.774,10)
+- [RASP model for Northern Norway](https://rasp.skyltdirect.se/scandinavia/showmap.php?conf=nonorth)
 
 
 ## Webcams
