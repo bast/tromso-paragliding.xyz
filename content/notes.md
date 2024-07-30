@@ -83,7 +83,7 @@ for others, too.
 
 ## Wing-overs
 
-- Weight-shift downhill
+- Weight-shift on top
 - Turn when diving
 - Better earlier than later (brake in the dive, not later)
 - Optimal brake input is 5 o'clock (just before 6 o'clock which is under the glider)
