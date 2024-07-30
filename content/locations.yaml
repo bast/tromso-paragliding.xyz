@@ -66,6 +66,12 @@ launches:
     lon: 19.2370489
     notes:
       Many cross-country adventures start here. Very nice launch on SW wind.
+  - name: Tverrfjellet
+    angle: 90
+    lat: 69.648
+    lon: 18.430651
+    notes:
+      Nice site for easterly wind.
 
 landings:
   - name: TIRB
@@ -122,3 +128,9 @@ landings:
       be wet and in summer it can be full of flies and mosquitoes.  It can make
       sense to walk up to the parking and either pack there or hope for
       retrieve to drive you back up to launch.
+  - name: Tverrfjellet parking
+    lat: 69.648459
+    lon: 18.480774
+    notes:
+      Lots of space to land. If wind picks up, it is better to land out front
+      in the open valley and not too far back where vind is compressed.
