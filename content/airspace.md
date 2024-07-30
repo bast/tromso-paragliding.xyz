@@ -32,7 +32,7 @@ Example conversation:
 
 ## More resources
 
-- [Airspaces in Norway](http://luftrom.info/viewer.html) (top right of that
+- [Airspaces in Norway](https://luftrom.info/viewer.html) (top right of that
   page you can also show all take-offs and filter on wind direction)
 - [Airspaces in Sweden](https://www.highfly.se/luftrum/)
 
