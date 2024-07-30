@@ -6,7 +6,7 @@
 <script>
   var map = L.map('map').setView([69.7, 18.9], 9);
 
-  L.tileLayer.kartverket('topo4', {attribution: "<a href='https://www.kartverket.no/'>Kartverket</a>"}).addTo(map);
+  L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png', {attribution: '&copy; <a href="http://www.kartverket.no/">Kartverket</a>'}).addTo(map);
 
   {% if show_locations %}
     var custom_icon = L.Icon.extend({
