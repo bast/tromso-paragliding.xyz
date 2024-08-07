@@ -11,14 +11,6 @@ If you know of other good resources, can you please let me know (see "Contact"
 or "Improve this page")?
 
 
-## Videos
-
-- [Cross Country Magazine Masterclass: SIV and active piloting with Malin Lobb](https://youtu.be/fMihwZEe-Sg)
-- [Cross Country Magazine Masterclass: Malin Lobb with his second masterclass on handling incidents in the air](https://www.youtube.com/watch?v=aD4F4gNBIXQ)
-- [SIV with Jocky Sanderson](https://youtu.be/T2yqaePk08g)
-- [Ozone Test Pilot Russell Ogden Discusses all things Paragliding](https://www.youtube.com/watch?v=_YVbdaLc1jk)
-
-
 ## Podcasts
 
 - <https://www.cloudbasemayhem.com/>
@@ -31,6 +23,18 @@ or "Improve this page")?
 - <https://www.xcmag.com/masteringparagliding/>
 - <https://xcmag.com/shop/product/thermal-flying-new-edition/>
 - <https://xcmag.com/shop/product/fifty-ways-to-fly-better-bruce-goldsmith/>
+
+
+## Videos
+
+- [SIV with Jocky Sanderson](https://youtu.be/T2yqaePk08g)
+- [Ozone Test Pilot Russell Ogden Discusses all things Paragliding](https://www.youtube.com/watch?v=_YVbdaLc1jk)
+
+
+## Great episodes but unfortunately moved/removed?
+
+- [Cross Country Magazine Masterclass: SIV and active piloting with Malin Lobb](https://youtu.be/fMihwZEe-Sg)
+- [Cross Country Magazine Masterclass: Malin Lobb with his second masterclass on handling incidents in the air](https://www.youtube.com/watch?v=aD4F4gNBIXQ)
 
 
 ## Maps
