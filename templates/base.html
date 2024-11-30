@@ -10,20 +10,6 @@
 
     <title>{{ config.title }}</title>
 
-    {% if config.extra.twitter_image %}
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:image" content="{{ config.extra.twitter_image | safe }}" />
-    {% endif %}
-
-    <meta name="description" content="{{ config.description }}" />
-    <meta name="twitter:description" content="{{ config.description }}" />
-
-    {% if page.title %}
-      <meta name="twitter:title" content="{{ page.title }}" />
-    {% else %}
-      <meta name="twitter:title" content="{{ config.title }}" />
-    {% endif %}
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
