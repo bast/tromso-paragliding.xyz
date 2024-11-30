@@ -43,8 +43,9 @@
     <div class="ui container bottom-buffer">
       <div class="ui secondary pointing stackable menu">
         <div class="right menu">
-          {% for link in config.extra.navigation %}
-            <a class="item" href="{{ link.path | safe }}" id="fonts">{{ link.name }}</a>
+          {% set data = load_data(path="content/navigation.yml") %}
+          {% for link in data.navigation %}
+            <a class="item" href="{{ link.target | safe }}" id="fonts">{{ link.name }}</a>
           {% endfor %}
         </div>
       </div>
