@@ -18,12 +18,12 @@
 
     var launch_icon = new custom_icon({iconUrl: '/img/arrow.png'});
     {% for site in locations.launches %}
-      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: launch_icon, rotationAngle: {{ site.angle }}}).bindPopup("<h3>{{ site.name }}</h3>{{ site.notes }}").addTo(map);
+      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: launch_icon, rotationAngle: {{ site.angle }}}).bindPopup("<h2>{{ site.name }}</h2>{{ site.notes }}").addTo(map);
     {% endfor %}
 
     var windsock_icon = new custom_icon({iconUrl: '/img/wind-sock.png'});
     {% for site in locations.landings %}
-      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: windsock_icon}).bindPopup("<h3>{{ site.name }}</h3>{{ site.notes }}").addTo(map);
+      L.marker([{{ site.lat }}, {{ site.lon }}], {icon: windsock_icon}).bindPopup("<h2>{{ site.name }}</h2>{{ site.notes }}").addTo(map);
     {% endfor %}
   {% endif %}
 
@@ -40,6 +40,6 @@
        var opacity = 0.05;
     {% endif %}
 
-    L.polygon({{ polygon.points }}).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h3>{{ polygon.name }}</h3>{{ polygon.notes }}").addTo(map);
+    L.polygon({{ polygon.points }}).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>{{ polygon.name }}</h2>{{ polygon.notes }}").addTo(map);
   {% endfor %}
 </script>
