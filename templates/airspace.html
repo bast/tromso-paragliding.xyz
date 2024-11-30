@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-  {{ page.content | safe }}
+  <div class="uk-child-width-expand@s" uk-grid>
+    <div class="uk-width-1-2@m">
+      {{ page.content | safe }}
+    </div>
 
-  {% set show_locations = false %}
-  {% include "map.html" %}
+    <div class="uk-width-1-2@m">
+      <h2>Available boxes</h2>
+
+      {% set show_locations = false %}
+      {% include "map.html" %}
+    </div>
+  </div>
 {% endblock content %}

@@ -1,14 +1,18 @@
 +++
+title = "Wind and weather"
 +++
 
-# Wind and weather
+{{ div(attributes='class="uk-child-width-expand@m" uk-grid') }}
+
+{{ div() }}
 
 
 ## Holfuy stations
 
-These anemometer stations are positioned very close to the main launches and
-are our main source of data:
-<https://holfuy.com/no/map/wind&la=69.70303&lo=18.72439&z=9.0>.
+[These anemometer stations](https://holfuy.com/no/map/wind&la=69.70303&lo=18.72439&z=9.0)
+are positioned very close to the main launches and
+are our main source of data.
+
 Many local pilots have the phone app installed where there is a useful tabular
 overview with 15 min or 1 hour granularity and it is recommended to look at the
 development and not only at the value right now.
@@ -38,6 +42,11 @@ I always look at this value before flying. Also here it is useful to look at
 the history of values and not only at the last reading.
 
 
+{{ enddiv() }}
+
+{{ div() }}
+
+
 ## Dewpoint and other data
 
 - <https://metar-taf.com/ENTC>
@@ -59,3 +68,6 @@ that depend on wind speed and direction: <https://xn--vindn-qra.no/>
 ## Webcams
 
 - [Langnes (next to airport) towards Kvaløya](http://um0.no/cam.html): cam and wind information
+
+
+{{ enddiv() }}

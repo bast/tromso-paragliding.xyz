@@ -1,9 +1,7 @@
 +++
 template = "airspace.html"
+title = "Airspace"
 +++
-
-# Airspace
-
 
 ## How to open a box
 
@@ -35,6 +33,3 @@ Example conversation:
 - [Airspaces in Norway](https://luftrom.info/viewer.html) (top right of that
   page you can also show all take-offs and filter on wind direction)
 - [Airspaces in Sweden](https://www.highfly.se/luftrum/)
-
-
-## Available boxes

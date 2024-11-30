@@ -1,7 +1,6 @@
 +++
+title = "Contact"
 +++
-
-# Contact
 
 This page is maintained by Radovan Bast (<radovan.bast@uit.no>).
 
