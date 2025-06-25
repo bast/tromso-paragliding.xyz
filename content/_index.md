@@ -17,4 +17,4 @@ I have gathered information about airspace from <https://thpk.no> and
 <https://luftrom.info/>. All other information is from own experience.
 
 **You can click on the symbols on the map** to get information about launches,
-landing sites, and airspace boxes.
+landing sites, and [airspace boxes](@/airspace.md).
