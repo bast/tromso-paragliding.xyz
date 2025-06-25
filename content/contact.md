@@ -2,7 +2,7 @@
 title = "Contact"
 +++
 
-This page is maintained by Radovan Bast (<radovan.bast@uit.no>).
+This page is maintained by [Radovan Bast](https://radovan.xyz/).
 
 Please also check the [THPK club website](https://thpk.no) for more info.
 
