@@ -1,0 +1,11 @@
+navigation:
+  - name: Sites
+    target: /
+  - name: Airspace
+    target: /airspace/
+  - name: Wind and weather
+    target: /wind/
+  - name: Resources
+    target: /resources/
+  - name: Contact
+    target: /contact/
