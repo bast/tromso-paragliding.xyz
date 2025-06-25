@@ -9,8 +9,9 @@ title = "Airspace"
 
 ## Flying within Tromsø CTR
 
-Flying within Tromsø CTR is only possible **within specific areas** (orange
-areas on the map) **after obtaining permission** from the control tower.
+Flying within Tromsø CTR (blue box) is only possible **within specific areas**
+(orange areas on the map) **after obtaining permission** from the control
+tower.
 
 
 ## How to open a box
