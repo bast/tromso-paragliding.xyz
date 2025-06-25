@@ -17,11 +17,11 @@ title = "Airspace"
 
 Example conversation:
 
-> You: This is (your name) and I would like to fly paraglider in the box (name of the box) until 16:00 local time. Is this possible?
+> You: This is [your name] and I would like to fly paraglider in the box [name of the box] until 16:00 local time. Is this possible?
 
-> Tower: Yes this is possible, you can have the (name of the box) until 16:00 local time with altitude 2000 ft and below.
+> Tower: Yes this is possible, you can have the [name of the box] until 16:00 local time with altitude 2000 ft and below.
 
-> You: Confirming 2000 ft and below until 16:00. My contact number is (your telephone number).
+> You: Confirming 2000 ft and below until 16:00. My contact number is [your telephone number].
 
 > Tower: Please call if you finish earlier.
 
