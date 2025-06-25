@@ -39,6 +39,7 @@ or "Improve this page")?
 ## Maps
 
 - [Great map for hiking](https://norgeskart.no/)
+- [Ticks make it up to here](https://flattkart.no/)
 
 
 ## Learning videos
