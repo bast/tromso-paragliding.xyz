@@ -3,8 +3,12 @@ template = "airspace.html"
 title = "Airspace"
 +++
 
+{{ visiting_pilot() }}
+
+
 ## How to open a box
 
+- Are you a visiting pilot? Please read the above first.
 - Before you fly within Tromso CTR, **make sure your box is open**.
 - To get the telephone number to the tower, please first join the [Signal group "THPK flyboks"](@/contact.md) and ask there.
 - **Before calling the tower and opening a box, make sure nobody else has opened it already**

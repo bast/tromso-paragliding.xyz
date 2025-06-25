@@ -2,19 +2,7 @@
 title = "Tromsø paragliding"
 +++
 
-{{ div(attributes='class="uk-card uk-card-secondary uk-card-body"') }}
-
-## Are you a visiting pilot who would like to fly withing Tromsø CTR?
-
-We ask you to fly with a local or at least have a conversation with
-a local to make sure we all use the airspaces correctly since
-this is an arrangement between the authorities and the THPK club.
-
-We ask you to not contact the Tromsø tower without contacting
-the club first.
-
-{{ enddiv() }}
-
+{{ visiting_pilot() }}
 
 Let's make paragliding safer and more fun for pilots visiting
 Tromsø and new pilots who might not have local knowledge (yet) and want to get
