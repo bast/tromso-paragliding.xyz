@@ -9,5 +9,5 @@ navigation:
     target: /resources/
   - name: Contact
     target: /contact/
-  - name: Local club
+  - name: Local club and tandem
     target: https://thpk.no/
