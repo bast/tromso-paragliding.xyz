@@ -21,7 +21,7 @@ or "Improve this page")?
 - <https://xcmag.com/shop/product/understanding-the-sky-new-edition/>
 - <https://www.xcmag.com/masteringparagliding/>
 - <https://xcmag.com/shop/product/thermal-flying-new-edition/>
-- <https://xcmag.com/shop/product/fifty-ways-to-fly-better-bruce-goldsmith/>
+- <https://xcmag.com/news/fifty-ways-to-fly-better-by-bruce-goldsmith-and-friends/>
 
 
 ## Videos

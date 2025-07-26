@@ -65,9 +65,4 @@ that depend on wind speed and direction: <https://xn--vindn-qra.no/>
 - [RASP model for Northern Norway](https://rasp.skyltdirect.se/scandinavia/showmap.php?conf=nonorth)
 
 
-## Webcams
-
-- [Langnes (next to airport) towards Kvaløya](http://um0.no/cam.html): cam and wind information
-
-
 {{ enddiv() }}
