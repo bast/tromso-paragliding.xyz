@@ -23,7 +23,7 @@ tower.
   otherwise it makes the club look uncoordinated. Please check the [Signal group "THPK flyboks"](@/contact.md).
 - **Once you open a box, post it on the Signal** group ["THPK flyboks"](@/contact.md) so that others know.
   Post which box, which altitude limit, until what time, and your contact.
-- **Have your radio on** set to 154.175 so that you can inform others about changes.
+- **Have your radio on** set to 154.175 MHz so that you can inform others about changes.
 - If you plan to close the box earlier, make sure nobody is in the air or about
   to launch and send other pilots 10-15 minutes warning. This is particularly important for the
   Fløya box where **you cannot see all launches from the landing** areas.
