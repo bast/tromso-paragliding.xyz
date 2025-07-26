@@ -138,6 +138,24 @@ em {
     font-style: italic;
 }
 
+.uk-offcanvas-bar a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    color: #3366dd;
+}
+
+.uk-offcanvas-bar a:hover {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    color: #cc0099;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+}
+
 .uk-nav>li>a {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;

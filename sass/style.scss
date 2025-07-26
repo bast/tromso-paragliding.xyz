@@ -1,6 +1,7 @@
 // https://webaim.org/blog/wcag-2-0-and-link-colors/
 // https://github.com/uikit/uikit/blob/develop/src/scss/variables-theme.scss
 $global-link-color: #3366dd;
+$navbar-toggle-color: #3366dd;
 $navbar-nav-item-color: #3366dd;
 $navbar-nav-item-hover-color: #cc0099;
 $iconnav-item-color: #3366dd;
@@ -15,6 +16,16 @@ $table-header-cell-color: #666666;
 @import "../uikit/src/scss/variables-theme.scss";
 @import "../uikit/src/scss/mixins-theme.scss";
 @import "../uikit/src/scss/uikit-theme.scss";
+
+.transparent-sidebar {
+    background-color: rgba(230, 230, 230, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.transparent-sidebar li {
+    list-style: none;
+    margin-bottom: 30px;
+}
 
 .markdown ul {
     @extend .uk-list;
