@@ -5,8 +5,6 @@ navigation:
     target: /airspace/
   - name: Wind and weather
     target: /wind/
-  - name: Resources
-    target: /resources/
   - name: Contact
     target: /contact/
   - name: Local club and tandem
