@@ -1,5 +1,9 @@
+{% import "macros.html" as macros %}
+
 {% extends "base.html" %}
 
 {% block content %}
-  {{ page.content | safe }}
+  {% if page.content %}
+    {{ page.content | replace(from="<!-- toc -->", to=macros::toc(page=page)) | safe }}
+  {% endif %}
 {% endblock content %}
