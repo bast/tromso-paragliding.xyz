@@ -4,7 +4,7 @@ navigation:
   - name: Airspace
     target: /airspace/
   - name: Wind and weather
-    target: /wind/
+    target: /weather/
   - name: Contact
     target: /contact/
   - name: Local club and tandem
