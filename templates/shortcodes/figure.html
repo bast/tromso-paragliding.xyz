@@ -1,0 +1,6 @@
+{% set image = resize_image(path=path, width=600, op="fit_width") %}
+
+<figure class="uk-text-left">
+  <img src="{{ image.url }}" alt="{{ alt | escape }}" class="uk-responsive">
+  <figcaption class="uk-margin-top">{{ caption | markdown(inline=true) | safe }}</figcaption>
+</figure>
