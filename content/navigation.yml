@@ -1,5 +1,5 @@
 navigation:
-  - name: Sites
+  - name: Main
     target: /
   - name: Airspace
     target: /airspace/
