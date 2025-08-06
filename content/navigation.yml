@@ -3,6 +3,8 @@ navigation:
     target: /
   - name: Airspace
     target: /airspace/
+  - name: Sites
+    target: /sites/
   - name: Wind and weather
     target: /weather/
   - name: Contact
