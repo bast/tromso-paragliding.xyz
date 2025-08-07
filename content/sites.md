@@ -106,6 +106,6 @@ Please also see the image for a typical soaring setup in Finnvikdalen:
 - Cars and tourists at the parking obstructing a possible top-landing
 - Too much focus on "stuffing" the top-landing at first attempt &xrarr; fly out, soar up, and try again with a better setup
 - Model planes or drones
-- Flying too far back behind the soaring slop and getting blown back there
+- Flying too far back behind the soaring slope and getting blown back there
 
 {{ figure(path="sites/fvd2.jpg", alt="Typical top-landing setup for Finnvikdalen", caption="Typical top-landing setup for Finnvikdalen. Watch out for cables, camper vans, and buses full of tourists.") }}
