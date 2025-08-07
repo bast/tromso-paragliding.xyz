@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tromso paragliding</title>
+    <link rel="shortcut icon" href="https://tromso-paragliding.xyz/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.11/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.11/dist/js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="https://tromso-paragliding.xyz/js/leaflet.rotatedMarker.js"></script>
+    <script src="https://tromso-paragliding.xyz/js/L.TileLayer.Kartverket.js"></script>
+
+    <link href="https://tromso-paragliding.xyz/style.css" rel="stylesheet">
+    <link href="https://tromso-paragliding.xyz/fonts.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <div class="uk-margin-bottom">
+        
+
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <ul class="uk-navbar-nav uk-visible@s">
+    
+      
+        <li><a href="https://tromso-paragliding.xyz">Main</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/airspace">Airspace</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/sites">Sites</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/weather">Wind and weather</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/contact">Contact</a></li>
+      
+    
+      
+        <li><a href="https:&#x2F;&#x2F;thpk.no&#x2F;" target="_blank">Local club and tandem</a></li>
+      
+    
+  </ul>
+
+  <!-- hamburger -->
+  <a class="uk-navbar-toggle hamburger-menu uk-hidden@s" href="#" uk-toggle="target: #sidenav">
+    <span uk-navbar-toggle-icon></span>
+    <span class="uk-margin-small-left">MENU</span>
+  </a>
+</nav>
+
+<div id="sidenav" uk-offcanvas>
+  <div class="uk-offcanvas-bar transparent-sidebar">
+    <ul>
+      
+        
+          <li><a href="https://tromso-paragliding.xyz">MAIN</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/airspace">AIRSPACE</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/sites">SITES</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/weather">WIND AND WEATHER</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/contact">CONTACT</a></li>
+        
+      
+        
+          <li><a href="https:&#x2F;&#x2F;thpk.no&#x2F;" target="_blank">LOCAL CLUB AND TANDEM</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+      </div>
+
+      
+        <h1>Wind and weather</h1>
+      
+      
+
+      <div class="markdown">
+        
+  
+    <div class="uk-child-width-expand@m" uk-grid>
+<div >
+<h2 id="holfuy-stations">Holfuy stations</h2>
+<p><a href="https://holfuy.com/no/map/wind&amp;la=69.70303&amp;lo=18.72439&amp;z=9.0">These anemometer stations</a>
+are positioned very close to the main launches and
+are our main source of data.</p>
+<p>Many local pilots have the phone app installed where there is a useful tabular
+overview with 15 min or 1 hour granularity and it is recommended to look at the
+development and not only at the value right now.</p>
+<h2 id="metar-data">METAR data</h2>
+<ul>
+<li><a href="https://metar-taf.com/history/ENTC">https://metar-taf.com/history/ENTC</a></li>
+</ul>
+<p>On this page look at the right column under "METAR/SPECI". The interesting value is the last entry in each row.</p>
+<p>For example let us look at this entry:</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>METAR ENTC 281050Z 06004KT 030V110 9999 FEW016 BKN022
+</span><span>OVC044 10/07 Q1017 NOSIG RMK WIND 2600FT 32014KT
+</span></code></pre>
+<p>Here the interesting part is the last part: <code>32014KT</code> This means that it's 14 knots with wind
+from 320 degrees. The wind station is located at <code>2600FT</code> <a href="https://norgeskart.no/#!?project=norgeskart&amp;layers=1002&amp;zoom=10&amp;lat=7735943.68&amp;lon=648327.31&amp;markerLat=7740715.707866439&amp;markerLon=646317.8149576897&amp;p=searchOptionsPanel&amp;sok=Stor-Kj%C3%B8len">at the top of
+Kjølen</a>.
+This reading gives a good idea of what wind to expect higher up. It often also
+gives a good idea on how the wind is on <a href="https://norgeskart.no/#!?project=norgeskart&amp;layers=1002&amp;zoom=12&amp;lat=7729925.28&amp;lon=654681.09&amp;markerLat=7728628.13872784&amp;markerLon=655309.1682911265&amp;p=searchOptionsPanel&amp;sok=Fl%C3%B8ya">top of
+Fløya</a>
+which is a popular launch spot on more SE wind.</p>
+<p>I always look at this value before flying. Also here it is useful to look at
+the history of values and not only at the last reading.</p>
+</div>
+<div >
+<h2 id="dewpoint-and-other-data">Dewpoint and other data</h2>
+<ul>
+<li><a href="https://metar-taf.com/ENTC">https://metar-taf.com/ENTC</a></li>
+</ul>
+<h2 id="vind-na-wind-now">Vind Nå ("wind now")</h2>
+<p>Data from many stations and some live webcams across Norway from various sports
+that depend on wind speed and direction: <a href="https://xn--vindn-qra.no/">https://xn--vindn-qra.no/</a></p>
+<h2 id="forecast">Forecast</h2>
+<ul>
+<li><a href="https://www.yr.no/nb/detaljer/tabell/1-305409/Norge/Troms%20og%20Finnmark/Troms%C3%B8/Troms%C3%B8">yr.no</a></li>
+<li><a href="https://www.windy.com/?69.629,18.774,10">windy.com</a></li>
+<li><a href="https://rasp.skyltdirect.se/scandinavia/showmap.php?conf=nonorth">RASP model for Northern Norway</a></li>
+</ul>
+</div>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="site-footer">
+  <a href="https://github.com/bast/tromso-paragliding.xyz/tree/main/content"
+     target="_blank"
+     uk-icon="icon: github">
+    improve this page
+  </a>
+</div>
+
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+navigation:
+  - name: Main
+    target: /
+  - name: Airspace
+    target: /airspace/
+  - name: Sites
+    target: /sites/
+  - name: Wind and weather
+    target: /weather/
+  - name: Contact
+    target: /contact/
+  - name: Local club and tandem
+    target: https://thpk.no/

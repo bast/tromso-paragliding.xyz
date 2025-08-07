@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tromso paragliding</title>
+    <link rel="shortcut icon" href="https://tromso-paragliding.xyz/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.11/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.11/dist/js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="https://tromso-paragliding.xyz/js/leaflet.rotatedMarker.js"></script>
+    <script src="https://tromso-paragliding.xyz/js/L.TileLayer.Kartverket.js"></script>
+
+    <link href="https://tromso-paragliding.xyz/style.css" rel="stylesheet">
+    <link href="https://tromso-paragliding.xyz/fonts.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <div class="uk-margin-bottom">
+        
+
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <ul class="uk-navbar-nav uk-visible@s">
+    
+      
+        <li><a href="https://tromso-paragliding.xyz">Main</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/airspace">Airspace</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/sites">Sites</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/weather">Wind and weather</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/contact">Contact</a></li>
+      
+    
+      
+        <li><a href="https:&#x2F;&#x2F;thpk.no&#x2F;" target="_blank">Local club and tandem</a></li>
+      
+    
+  </ul>
+
+  <!-- hamburger -->
+  <a class="uk-navbar-toggle hamburger-menu uk-hidden@s" href="#" uk-toggle="target: #sidenav">
+    <span uk-navbar-toggle-icon></span>
+    <span class="uk-margin-small-left">MENU</span>
+  </a>
+</nav>
+
+<div id="sidenav" uk-offcanvas>
+  <div class="uk-offcanvas-bar transparent-sidebar">
+    <ul>
+      
+        
+          <li><a href="https://tromso-paragliding.xyz">MAIN</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/airspace">AIRSPACE</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/sites">SITES</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/weather">WIND AND WEATHER</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/contact">CONTACT</a></li>
+        
+      
+        
+          <li><a href="https:&#x2F;&#x2F;thpk.no&#x2F;" target="_blank">LOCAL CLUB AND TANDEM</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+      </div>
+
+      
+      
+        <h1>Tromsø paragliding</h1>
+      
+
+      <div class="markdown">
+        
+  <div class="uk-child-width-expand@s" uk-grid>
+    <div class="uk-width-1-3@m">
+      <div class="uk-card uk-card-secondary uk-card-body">
+
+<h3 class="uk-card-title">Are you a visiting pilot who would like to fly within Tromsø CTR?</h3>
+
+<p>
+Tromsø CTR is the blue box on the map.
+</p>
+
+<p>
+We ask you to <b>fly with a local pilot</b> or at least <b>have a conversation
+with a local pilot</b> to make sure we all use the airspaces correctly since
+this is an arrangement between the authorities and the
+<a href="https://thpk.no" target="_blank">THPK club</a>.
+</p>
+
+<p>
+We ask you to not contact the Tromsø tower without contacting the
+<a href="https://thpk.no" target="_blank">THPK club</a>
+first.
+</p>
+
+</div>
+<p>Let's make paragliding safer and more fun for pilots visiting
+Tromsø and new pilots who might not have local knowledge (yet) and want to get
+access to information and resources that we have and use locally.</p>
+<p>This page is not a replacement for the <a href="https://thpk.no">Tromsø hang- og paragliderklubb (THPK)
+club website</a>.  I created this page with the goal of providing
+something I wish I had when traveling to other places and wanting to fly.</p>
+<p>The information here comes <strong>without any guarantees. Please verify the sources</strong>.
+I have gathered information about airspace from <a href="https://thpk.no">https://thpk.no</a> and
+<a href="https://luftrom.info/">https://luftrom.info/</a>. All other information is from own experience.</p>
+<p><strong>You can click on the symbols on the map</strong> to get information about launches,
+landing sites, and <a href="https://tromso-paragliding.xyz/airspace/">airspace boxes</a>.</p>
+
+    </div>
+
+    <div class="uk-width-2-3@m">
+      
+      
+
+
+<div id='map'></div>
+
+<script>
+  var map = L.map('map').setView([69.7, 18.9], 9);
+
+  L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png', {attribution: '&copy; <a href="http://www.kartverket.no/">Kartverket</a>'}).addTo(map);
+
+  
+    var custom_icon = L.Icon.extend({
+        options: {
+            iconSize:   [50, 50],
+            iconAnchor: [25, 25],
+        }
+    });
+
+    var launch_icon = new custom_icon({iconUrl: '/img/arrow.png'});
+    
+      L.marker([69.633145, 18.990738], {icon: launch_icon, rotationAngle: -90}).bindPopup("<h2>South start</h2>Lots of space here. Good on SW or W wind.").addTo(map);
+    
+      L.marker([69.636169, 18.998], {icon: launch_icon, rotationAngle: 0}).bindPopup("<h2>North start</h2>Right next to the antenna. Works for NW, N, even slightly NE wind. This is one of our main launches. You can either take the cable car up or walk up sherpatrappa.").addTo(map);
+    
+      L.marker([69.7006255, 18.6356585], {icon: launch_icon, rotationAngle: 90}).bindPopup("<h2>Ersfjord</h2>Great site on E wind, especially in winter and early spring. Requires 4-6 m&#x2F;s to hang. If you drop below launch, head to landing and don&#x27;t try to scratch up. On S wind this is not a good place. If the wind is strong enough to stay up, you are then probably in a rotor.").addTo(map);
+    
+      L.marker([69.760482, 18.853783], {icon: launch_icon, rotationAngle: -45}).bindPopup("<h2>Finnvikdalen launch</h2>Ideally on W to NW wind. Above 4-5 m&#x2F;s the mountain to the right provides a beautiful soaring space. The valley provides lot of space to explore and land.").addTo(map);
+    
+      L.marker([69.6201959, 19.000064], {icon: launch_icon, rotationAngle: 90}).bindPopup("<h2>Floya north</h2>N or NE wind. Watch out for the high-power electricity line running below the launch.  After launch head for the antenna.").addTo(map);
+    
+      L.marker([69.6199724, 18.9981473], {icon: launch_icon, rotationAngle: 220}).bindPopup("<h2>Floya south</h2>After launch swing right and head for the south start.").addTo(map);
+    
+      L.marker([69.6181481, 18.9978354], {icon: launch_icon, rotationAngle: 120}).bindPopup("<h2>Floya east</h2>There is a little rock&#x2F;ledge where it is possible to launch on E wind. After launch swing left and follow the slope to the left.  Watch out for the high-power electricity line and head for the antenna.").addTo(map);
+    
+      L.marker([69.5785689, 19.1222526], {icon: launch_icon, rotationAngle: 120}).bindPopup("<h2>Ramfjord</h2>A nice spot to launch. Sometimes conditions are great but thermals in front pull in backwind and make it difficult&#x2F;impossible to launch. In winter and early spring bring snowshoes.").addTo(map);
+    
+      L.marker([69.5610323, 19.2370489], {icon: launch_icon, rotationAngle: -100}).bindPopup("<h2>Fagerfjellet</h2>Many cross-country adventures start here. Very nice launch on SW wind.").addTo(map);
+    
+      L.marker([69.648, 18.430651], {icon: launch_icon, rotationAngle: 90}).bindPopup("<h2>Tverrfjellet</h2>Nice site for easterly wind.").addTo(map);
+    
+
+    var windsock_icon = new custom_icon({iconUrl: '/img/wind-sock.png'});
+    
+      L.marker([69.641227, 18.978109], {icon: windsock_icon}).bindPopup("<h2>TIRB</h2>This is the main landing on this site.  It is close to the cable car.  It is small but there is some space if you overshoot.  Easier to land from south than from north.  On strong west wind the place can be very turbulent and in this case either try to top-land or rather go to Mandelasletta. Watch out for the fence next to the wind-sock.  Also use the flags on top of the supermarket as wind indication. In afternoons a strong sea-breeze can set in.  If you see white-caps on the water, don&#x27;t fly since you risk to be blown back. Also watch out for the big electricity trafo station a bit to the south.").addTo(map);
+    
+      L.marker([69.650857, 18.991451], {icon: windsock_icon}).bindPopup("<h2>Mandelasletta</h2>A lot of space. Basically 3 football fields large. We use this landing in courses but nothing speaks against using it also after the course. In afternoons a strong sea-breeze can set in.  If you see white-caps on the water, don&#x27;t fly since you risk to be blown back.").addTo(map);
+    
+      L.marker([69.697589, 18.631767], {icon: windsock_icon}).bindPopup("<h2>Ersfjord landing</h2>Behind the house, typically landing from west towards east.  The landing is big and easy but it is really the only landing (other than top-landing).  Beach is not a good landing as there are cables everywhere.  Biggest risk is the cable running down from the antenna. If you are below launch, set up for landing and don&#x27;t scratch otherwise you risk getting too low to clear the cable.  If wind turns south and picks up and you realize you won&#x27;t make it to the landing, a backup landing is north of the launch, at the shore.").addTo(map);
+    
+      L.marker([69.764473, 18.844769], {icon: windsock_icon}).bindPopup("<h2>Little parking</h2>Typically approached from east to west.  Watch out it&#x27;s sloped and you will very likely overshoot it.").addTo(map);
+    
+      L.marker([69.759861, 18.854284], {icon: windsock_icon}).bindPopup("<h2>Top parking</h2>Popular landing when conditions allow to lift&#x2F;hang. Sometimes cars park left and right. Try a rectangular approach in front of the cables.").addTo(map);
+    
+      L.marker([69.768239, 18.842442], {icon: windsock_icon}).bindPopup("<h2>Marsh (&quot;myra&quot;)</h2>You can land a 747 here. Almost. We use this during the course.  It can be wet and in summer it can be full of flies and mosquitoes.  It can make sense to walk up to the parking and either pack there or hope for retrieve to drive you back up to launch.").addTo(map);
+    
+      L.marker([69.648459, 18.480774], {icon: windsock_icon}).bindPopup("<h2>Tverrfjellet parking</h2>Lots of space to land. If wind picks up, it is better to land out front in the open valley and not too far back where vind is compressed.").addTo(map);
+    
+  
+
+  
+    
+       var color = '#0000ff';
+       var opacity = 0.05;
+    
+
+    L.polygon([[69.966667, 18.733333], [69.466667, 18.433333], [69.4375, 19.05], [69.9, 19.5]]).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>Tromso CTR</h2>Flying is restricted to certain boxes and you have to call the tower before flying. Before you call, coordinate with others. See &quot;Airspace&quot;.").addTo(map);
+  
+    
+       var color = '#f37228';
+       
+         var opacity = 0.2;
+       
+    
+
+    L.polygon([[69.7550668336569, 18.8889583272439], [69.7466065017939, 18.8588759725775], [69.7643426245577, 18.7682415346717], [69.771601487366, 18.7217624245984], [69.7738617370472, 18.7227103346394], [69.775392008216, 18.7312188697717], [69.7789404235089, 18.7609613279396], [69.7814598088878, 18.7586636037275], [69.8033514360325, 18.7746693508667], [69.8000610507342, 18.7685808226374], [69.8001091925761, 18.7507179210838], [69.8010505044528, 18.7444240544715], [69.8014062122347, 18.7253777441599], [69.8024232557499, 18.7244577347478], [69.8076682162557, 18.7325363025723], [69.8136271425967, 18.7022299245212], [69.8241945587651, 18.7057407361071], [69.8352786108042, 18.6845611552687], [69.8424866058522, 18.6577256826685], [69.8846972777399, 18.6838567056161], [69.8810311759786, 18.7047401341967], [69.8788578162928, 18.7358167093072], [69.8829589078028, 18.7575253677854], [69.8827281392483, 18.7861913158079], [69.8772872146816, 18.8094943896633], [69.8717618120523, 18.8189754382508], [69.8601904512796, 18.8267977623821], [69.8526543813484, 18.8237709702705], [69.8480290791475, 18.8091498986883], [69.8481821879552, 18.793193718893], [69.8434614584586, 18.7917906757345], [69.8409776021765, 18.8012602388545], [69.8418532141315, 18.8135407534526], [69.8426099450676, 18.8224945744215], [69.8261531970837, 18.8189535188672], [69.7896345507298, 18.8640041201945]]).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>Finnvikdalen box</h2>Must be cleared with the control tower.").addTo(map);
+  
+    
+       var color = '#f37228';
+       
+         var opacity = 0.2;
+       
+    
+
+    L.polygon([[69.804671656243, 18.634865810839], [69.805428996475, 18.634996504397], [69.805499705847, 18.640783452513], [69.803349170589, 18.64371129831], [69.799480734371, 18.653901318031], [69.778517437406, 18.643129130682], [69.774843768745, 18.637002984645], [69.771752277565, 18.639490166349], [69.769800974067, 18.637369247106], [69.767783302339, 18.643060458124], [69.76647984431, 18.644070648597], [69.765434116876, 18.64869330881], [69.763228463758, 18.649684293628], [69.762329939092, 18.647196323313], [69.760703619224, 18.647738612276], [69.759156541891, 18.64445310179], [69.758481873131, 18.638026002039], [69.75904771837, 18.624404413531], [69.758241543684, 18.617406829234], [69.757640226117, 18.616617925416], [69.754121614369, 18.626027943004], [69.752007396741, 18.629505076549], [69.750498330875, 18.628971540083], [69.742967713233, 18.643991772923], [69.739990601664, 18.645534558283], [69.736811509132, 18.643067681752], [69.733765188206, 18.643364983844], [69.731535562964, 18.640925641938], [69.724845150419, 18.647444479459], [69.722053691145, 18.6514826986], [69.717989818826, 18.655026226045], [69.716691968662, 18.65576051708], [69.714251351431, 18.652053310333], [69.71316835104, 18.651592669473], [69.712371340762, 18.653371656401], [69.707321662462, 18.649489511332], [69.706082495655, 18.649686500078], [69.704365125262, 18.647748472286], [69.702718982367, 18.64924372244], [69.701129456014, 18.64801214718], [69.699147861306, 18.645071611185], [69.696614276861, 18.634376653782], [69.699901717403, 18.610862668722], [69.702149484945, 18.572936869078]]).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>Ersfjord box</h2>Must be cleared with the control tower.").addTo(map);
+  
+    
+       var color = '#f37228';
+       
+         var opacity = 0.2;
+       
+    
+
+    L.polygon([[69.539886855491, 18.97761072065438], [69.554046031949, 18.96795971806275], [69.567011407395, 19.00366144669493], [69.613782831903, 19.17395995796021], [69.597451831367, 19.20322917994004], [69.579658021547, 19.18643208924582], [69.562648523465, 19.16983399513182], [69.559586154763, 19.16671990448994], [69.545544374314, 19.03618812259839]]).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>Ramfjord box</h2>Must be cleared with the control tower.").addTo(map);
+  
+    
+       var color = '#f37228';
+       
+         var opacity = 0.2;
+       
+    
+
+    L.polygon([[69.649169782934, 19.006964779808747], [69.6413345873194, 19.044997391891346], [69.6064230029957, 19.123729395074662], [69.5929756081826, 19.087216915873014], [69.6202250345497, 18.998920460271652], [69.6384478529233, 18.977796521970152], [69.6415881640114, 18.984670878398166]]).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>Tromsdalen box</h2>Must be cleared with the control tower.").addTo(map);
+  
+    
+       var color = '#f37228';
+       
+         var opacity = 0.2;
+       
+    
+
+    L.polygon([[69.6491093865182, 19.0067486514087], [69.6321847295854, 19.0293751312458], [69.6205623516309, 18.9994952246584], [69.6061244260072, 19.0033220259397], [69.5670580068651, 19.0036043672493], [69.5540398250019, 18.968134880051], [69.5584704401316, 18.9613460843866], [69.568198608912, 18.9577128070489], [69.5716970229662, 18.9584981306531], [69.5735730784892, 18.9574860651622], [69.579227433144, 18.9511879668677], [69.583562779919, 18.944370237906], [69.6017193498756, 18.9420128962866], [69.6230546884135, 18.9525124409908], [69.6343279172969, 18.9687971852247], [69.6383572692233, 18.9776005219973], [69.6490052601978, 19.0066266101406]]).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>Floya box</h2>Must be cleared with the control tower.").addTo(map);
+  
+    
+       var color = '#f37228';
+       
+         var opacity = 0.2;
+       
+    
+
+    L.polygon([[69.6492498640864, 19.00709929476029], [69.6535210147592, 18.99588872410033], [69.6497697935213, 18.98455067727653], [69.6430831932064, 18.97978192447704], [69.6398019515945, 18.97256590943813], [69.6381785549719, 18.97814687939741], [69.6382243283103, 18.97822367565771]]).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>Landing box</h2>Can only be used for landing. Automatically open if either &quot;Tromsdalen&quot; or &quot;Floya&quot; is open. Max altitude 1500 ft.").addTo(map);
+  
+</script>
+
+    </div>
+  </div>
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="site-footer">
+  <a href="https://github.com/bast/tromso-paragliding.xyz/tree/main/content"
+     target="_blank"
+     uk-icon="icon: github">
+    improve this page
+  </a>
+</div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
