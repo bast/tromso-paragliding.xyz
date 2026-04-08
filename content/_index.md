@@ -2,7 +2,7 @@
 title = "Tromsø paragliding"
 +++
 
-{{ visiting_pilot() }}
+{{ ctr() }}
 
 Let's make paragliding safer and more fun for pilots visiting
 Tromsø and new pilots who might not have local knowledge (yet) and want to get
