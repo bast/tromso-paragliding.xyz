@@ -28,18 +28,15 @@
   {% endif %}
 
   {% for polygon in areas.polygons %}
-    {% if polygon.name is containing("box") %}
-       var color = '#f37228';
-       {% if show_locations %}
-         var opacity = 0.2;
-       {% else %}
-         var opacity = 0.4;
-       {% endif %}
-    {% else %}
-       var color = '#0000ff';
-       var opacity = 0.05;
-    {% endif %}
+    {% if not polygon.name is containing("box") %}
+      var color = '#f52727';
+      {% if show_locations %}
+        var opacity = 0.2;
+      {% else %}
+        var opacity = 0.4;
+      {% endif %}
 
-    L.polygon({{ polygon.points }}).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>{{ polygon.name }}</h2>{{ polygon.notes }}").addTo(map);
+      L.polygon({{ polygon.points }}).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>{{ polygon.name }}</h2>{{ polygon.notes }}").addTo(map);
+    {% endif %}
   {% endfor %}
 </script>
