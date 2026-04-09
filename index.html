@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tromso paragliding</title>
+    <link rel="shortcut icon" href="https://tromso-paragliding.xyz/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.7/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.7/dist/js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="https://tromso-paragliding.xyz/js/leaflet.rotatedMarker.js"></script>
+    <script src="https://tromso-paragliding.xyz/js/L.TileLayer.Kartverket.js"></script>
+
+    <link href="https://tromso-paragliding.xyz/style.css" rel="stylesheet">
+    <link href="https://tromso-paragliding.xyz/fonts.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <div class="uk-margin-bottom">
+        
+
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <ul class="uk-navbar-nav uk-visible@s">
+    
+      
+        <li><a href="https://tromso-paragliding.xyz">Main</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/airspace">Airspace</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/sites">Sites</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/weather">Wind and weather</a></li>
+      
+    
+      
+        <li><a href="https://tromso-paragliding.xyz/contact">Contact</a></li>
+      
+    
+      
+        <li><a href="https:&#x2F;&#x2F;thpk.no&#x2F;" target="_blank">Local club and tandem</a></li>
+      
+    
+  </ul>
+
+  <!-- hamburger -->
+  <a class="uk-navbar-toggle hamburger-menu uk-hidden@s" href="#" uk-toggle="target: #sidenav">
+    <span uk-navbar-toggle-icon></span>
+    <span class="uk-margin-small-left">MENU</span>
+  </a>
+</nav>
+
+<div id="sidenav" uk-offcanvas>
+  <div class="uk-offcanvas-bar transparent-sidebar">
+    <ul>
+      
+        
+          <li><a href="https://tromso-paragliding.xyz">MAIN</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/airspace">AIRSPACE</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/sites">SITES</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/weather">WIND AND WEATHER</a></li>
+        
+      
+        
+          <li><a href="https://tromso-paragliding.xyz/contact">CONTACT</a></li>
+        
+      
+        
+          <li><a href="https:&#x2F;&#x2F;thpk.no&#x2F;" target="_blank">LOCAL CLUB AND TANDEM</a></li>
+        
+      
+    </ul>
+  </div>
+</div>
+
+      </div>
+
+      
+      
+        <h1>Tromsø paragliding</h1>
+      
+
+      <div class="markdown">
+        
+  <div class="uk-child-width-expand@s" uk-grid>
+    <div class="uk-width-1-3@m">
+      <div class="uk-card uk-card-secondary uk-card-body">
+
+<h3 class="uk-card-title">Since 2026-04-08 paragliding within Tromsø CTR is no longer possible</h3>
+
+</div>
+<p>This page used to give information about flying boxes within CTR and our starts
+and landings. However, since 2026-04-08 it is no longer possible to paraglide
+within the CTR area (red area on the map).</p>
+
+    </div>
+
+    <div class="uk-width-2-3@m">
+      
+      
+
+
+<div id='map'></div>
+
+<script>
+  var map = L.map('map').setView([69.7, 18.9], 9);
+
+  L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png', {attribution: '&copy; <a href="http://www.kartverket.no/">Kartverket</a>'}).addTo(map);
+
+  
+
+  
+    
+      var color = '#f52727';
+      
+        var opacity = 0.4;
+      
+
+      L.polygon([[69.966667, 18.733333], [69.808333, 18.429722], [69.644444, 18.417778], [69.551389, 18.42], [69.466667, 18.433333], [69.4375, 19.05], [69.551944, 19.278333], [69.769722, 19.471667], [69.9, 19.5], [69.966667, 18.733333]]).setStyle({weight: 1.5, fillOpacity: opacity, color: color, fillColor: color}).bindPopup("<h2>Tromso CTR</h2>Flying is restricted to certain boxes and you have to call the tower before flying. Before you call, coordinate with others. See &quot;Airspace&quot;.").addTo(map);
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</script>
+
+    </div>
+  </div>
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="site-footer">
+  <a href="https://github.com/bast/tromso-paragliding.xyz/tree/main/content"
+     target="_blank"
+     uk-icon="icon: github">
+    improve this page
+  </a>
+</div>
+
+      </div>
+
+    </div>
+  </body>
+</html>

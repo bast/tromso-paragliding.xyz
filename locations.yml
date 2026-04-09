@@ -1,0 +1,136 @@
+---
+launches:
+  - name: South start
+    angle: -90
+    lat: 69.633145
+    lon: 18.990738
+    notes:
+      Lots of space here. Good on SW or W wind.
+  - name: North start
+    angle: 0
+    lat: 69.636169
+    lon: 18.998
+    notes:
+      Right next to the antenna. Works for NW, N, even slightly NE wind.
+      This is one of our main launches. You can either take the cable car
+      up or walk up sherpatrappa.
+  - name: Ersfjord
+    angle: 90
+    lat: 69.7006255
+    lon: 18.6356585
+    notes:
+      Great site on E wind, especially in winter and early spring. Requires 4-6 m/s to hang. If you drop
+      below launch, head to landing and don't try to scratch up.
+      On S wind this is not a good place. If the wind is strong enough to stay
+      up, you are then probably in a rotor.
+  - name: Finnvikdalen launch
+    angle: -45
+    lat: 69.760482
+    lon: 18.853783
+    notes:
+      Ideally on W to NW wind. Above 4-5 m/s the mountain to the right provides
+      a beautiful soaring space. The valley provides lot of space to explore and
+      land.
+  - name: Floya north
+    angle: 90
+    lat: 69.6201959
+    lon: 19.000064
+    notes:
+      N or NE wind. Watch out for the high-power electricity line running below
+      the launch.  After launch head for the antenna.
+  - name: Floya south
+    angle: 220
+    lat: 69.6199724
+    lon: 18.9981473
+    notes:
+      After launch swing right and head for the south start.
+  - name: Floya east
+    angle: 120
+    lat: 69.6181481
+    lon: 18.9978354
+    notes:
+      There is a little rock/ledge where it is possible to launch on E wind.
+      After launch swing left and follow the slope to the left.  Watch out for
+      the high-power electricity line and head for the antenna.
+  - name: Ramfjord
+    angle: 120
+    lat: 69.5785689
+    lon: 19.1222526
+    notes:
+      A nice spot to launch. Sometimes conditions are great but thermals in
+      front pull in backwind and make it difficult/impossible to launch. In
+      winter and early spring bring snowshoes.
+  - name: Fagerfjellet
+    angle: -100
+    lat: 69.5610323
+    lon: 19.2370489
+    notes:
+      Many cross-country adventures start here. Very nice launch on SW wind.
+  - name: Tverrfjellet
+    angle: 90
+    lat: 69.648
+    lon: 18.430651
+    notes:
+      Nice site for easterly wind.
+
+landings:
+  - name: TIRB
+    lat: 69.641227
+    lon: 18.978109
+    notes:
+      This is the main landing on this site.  It is close to the cable car.  It
+      is small but there is some space if you overshoot.  Easier to land from
+      south than from north.  On strong west wind the place can be very
+      turbulent and in this case either try to top-land or rather go to
+      Mandelasletta. Watch out for the fence next to the wind-sock.  Also use
+      the flags on top of the supermarket as wind indication.
+      In afternoons a strong sea-breeze can set in.  If you see white-caps on
+      the water, don't fly since you risk to be blown back.
+      Also watch out for the big electricity trafo station a bit to the south.
+  - name: Mandelasletta
+    lat: 69.650857
+    lon: 18.991451
+    notes:
+      A lot of space. Basically 3 football fields large. We use this landing in
+      courses but nothing speaks against using it also after the course.
+      In afternoons a strong sea-breeze can set in.  If you see white-caps on
+      the water, don't fly since you risk to be blown back.
+  - name: Ersfjord landing
+    lat: 69.697589
+    lon: 18.631767
+    notes:
+      Behind the house, typically landing from west towards east.  The landing
+      is big and easy but it is really the only landing (other than
+      top-landing).  Beach is not a good landing as there are cables
+      everywhere.  Biggest risk is the cable running down from the antenna. If
+      you are below launch, set up for landing and don't scratch otherwise you
+      risk getting too low to clear the cable.  If wind turns south and picks
+      up and you realize you won't make it to the landing, a backup landing is
+      north of the launch, at the shore.
+  - name: Little parking
+    lat: 69.764473
+    lon: 18.844769
+    notes:
+      Typically approached from east to west.  Watch out it's sloped and you
+      will very likely overshoot it.
+  - name: Top parking
+    lat: 69.759861
+    lon: 18.854284
+    notes:
+      Popular landing when conditions allow to lift/hang.
+      Sometimes cars park left and right.
+      Try a rectangular approach in front of the cables.
+  - name: Marsh ("myra")
+    lat: 69.768239
+    lon: 18.842442
+    notes:
+      You can land a 747 here. Almost. We use this during the course.  It can
+      be wet and in summer it can be full of flies and mosquitoes.  It can make
+      sense to walk up to the parking and either pack there or hope for
+      retrieve to drive you back up to launch.
+  - name: Tverrfjellet parking
+    lat: 69.648459
+    lon: 18.480774
+    notes:
+      Lots of space to land. If wind picks up, it is better to land out front
+      in the open valley and not too far back where vind is compressed.
